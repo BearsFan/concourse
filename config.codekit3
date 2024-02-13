@@ -9,6 +9,14 @@
   ],
   "creatorBuild" : "34564",
   "files" : {
+    "\/.gitattributes" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/.gitattributes",
+      "oF" : 0
+    },
     "\/404.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -730,6 +738,14 @@
       "oAP" : "\/js\/vendor\/select2.min-min.css",
       "oF" : 0,
       "pg" : 0
+    },
+    "\/local.sql" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/local.sql",
+      "oF" : 0
     },
     "\/page-additional-seminars.php" : {
       "cB" : 0,
