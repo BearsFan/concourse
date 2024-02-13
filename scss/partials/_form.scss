@@ -1,0 +1,73 @@
+form {
+  input[type="text"], input[type="email"]{
+    width:100%;
+    max-width:430px;
+    padding:10px;
+    background-color:#fff;
+    color:#000;
+    font-weight:bold;
+    font-size:16px;
+    border:none;
+  }
+  input:focus-visible {
+    outline:none;
+  }
+  input[type="date"] {
+    border:none;
+    padding:8px;
+    color:#777777;
+  }
+}
+
+.content-block {
+  form {
+    input {
+      max-width:100%;
+    }
+    textarea {
+      width:100%;
+    }
+    
+    
+    input[type="submit"] {
+      display:inline-block; 
+      background-color:#999; 
+      color: #FFFFFF;	
+      font-family: $primary_font;
+      font-size: 20px;	
+      font-weight:bold;
+      text-align: center;
+      padding: 10px 50px;
+      border-radius:25px; 
+      border:1px solid #fff;
+      text-decoration:none;
+      transition: all $hover_speed;
+      margin:20px auto;
+
+    }
+
+
+    input[type="submit"]:hover {
+      	background-color: $dark-gray; 
+        color:#fff;
+        transition: all $hover_speed;
+    }
+    
+  }
+}
+
+.post-password-form {
+  
+  max-width: 600px;
+  margin: 0 auto;
+  
+  label {
+    
+    input {
+      width:auto;
+      border:1px solid $black;
+    }
+    
+  }
+  
+}

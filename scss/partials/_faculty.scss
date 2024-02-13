@@ -1,0 +1,54 @@
+.faculty-wrap {
+  .alm-listing {
+    width:100%;
+    margin:0 0 40px 0;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    .faculty {
+      flex-basis:calc(33.33333% - 12px);
+      min-width:calc(33.33333% - 12px);
+      position:relative;
+      padding:25px;
+      background-color:#fff;
+      text-align:left;
+      margin:0 12px 24px 0;
+      h3 {
+        color:#000;
+        font-size:20px;
+        line-height:22px;
+        font-weight:normal;
+        margin:20px 0 0 0;
+        padding:0;
+        font-family:$font2;
+      }
+      p {
+        font-size:19px;
+        line-height:22px;
+        margin:0 0 0 0;
+        padding:0;
+        color:#6d6e71;
+        font-family:$font1;
+      }
+      p.bioh {
+        margin-top:20px;
+        font-size:19px;
+      }
+      div.bio {
+        p {
+          font-size:15px;
+          line-height:18px;
+        }
+      }
+      @include respond($tablet) {
+        flex-basis:calc(50% - 12px);
+        min-width:calc(50% - 12px);
+      }
+      @include respond($mobile) {
+        flex-basis:calc(100%);
+        min-width:calc(100%);
+      }
+    }
+  }
+}
+

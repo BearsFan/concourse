@@ -1,0 +1,97 @@
+section.slider-section {
+  margin:40px 0 100px 0;
+  .wrapper {
+    padding:0 24px;
+    max-width:1150px;
+    h3 {
+      color:#8d3109;
+      font-size:28px;
+      line-height:32px;
+      font-weight:300;
+    }
+    
+    .slider {
+      max-width:1040px;
+      margin:20px auto;
+      text-align:center;
+      .slick-track {
+        justify-content: center;
+        .slide {
+          text-align:center;
+          padding:120px 0 0 0;
+          background-image:url(/wp-content/themes/concourse/img/slider/leaf.png);
+          background-repeat:no-repeat;
+          background-position:center top;
+          p.quote {
+            color:$brown;
+            font-size:29px;
+            line-height:45px;
+            font-family:$font2;
+            max-width:820px;
+            margin:0 auto 20px auto;
+          }
+          p.author {
+            color:#000;
+            font-size:18px;
+            line-height:25px;
+            font-family:$font1;
+            max-width:820px;
+            margin:0 auto;
+            strong {
+              color:#000;
+            }
+          }
+        }
+      }
+      
+    }
+    
+    
+  }
+  .slick-prev,  .slick-next {
+    width:34px ;
+    height:34px;
+    background-repeat:no-repeat !important;
+    background-position:0 0 !important;
+    background-size:34px;
+    z-index:9999;
+    button {
+      border-radius:0;
+    }
+  }
+  .slick-next {
+    right:0% ;
+    background-image:url(/wp-content/themes/concourse/img/slider/arrow-right.png) !important ;
+  }
+  .slick-prev {
+    left:0% ;
+    background-image:url(/wp-content/themes/concourse/img/slider/arrow-left.png) !important ;
+  }
+  .slick-prev:before, .slick-next:before {
+    content:'';
+    color:#302d2d;
+  }
+  .slick-track
+  {
+      display: flex !important;
+  }
+
+  .slick-slide
+  {
+      height: inherit !important;
+  }
+
+  
+  @include respond($mobile) {
+    
+    .slick-next {
+      right:5% ;
+    }
+    .slick-prev {
+      left:5% ;
+    }
+
+  }
+
+}
+

@@ -1,0 +1,77 @@
+
+/*! Base styles */
+body{
+	font-family: $primary_font;
+}
+
+header , section , footer {
+	text-align: center;
+}
+
+section {position:relative; z-index:5;}
+
+.wrapper {
+	max-width: $site_width;
+	margin: 0 auto;
+	text-align: left;
+	padding: 0;
+}
+
+a, a:link, a:active {
+  color:$secondary_color; 
+  text-decoration:underline; 
+  transition: all $hover_speed;
+  cursor:pointer;
+}
+a:hover {
+  color: $dark-gray; 
+  transition: all $hover_speed;
+}
+
+button {
+  padding:20px 40px;
+  background-color:#fff;
+  color:#000;
+  border-radius:30px;
+  border:none;
+  font-size:18px;
+  transition: all $hover_speed;
+  cursor:pointer;
+  text-transform:uppercase;
+  font-family:$font1;
+}
+button:hover {
+  background-color:$bluelink;
+  transition: all $hover_speed;
+  color:#fff;
+  cursor:pointer;
+}
+
+
+.alm-btn-wrap .alm-load-more-btn {
+  padding:10px 40px !important;
+  background-color:#597aa1 !important;
+  color:#fff !important;
+  border-radius:20px !important;
+  border:none !important;
+  font-size:16px !important;
+  transition: all $hover_speed !important;
+  cursor:pointer !important;
+}
+
+.faculty-wrap, .alumni-wrap, .students-wrap {
+  .alm-btn-wrap .alm-load-more-btn {
+    //background-color:#e7e8e9 !important;
+  }
+}
+
+.alm-btn-wrap .alm-load-more-btn:hover {
+  background-color:$bluelink !important;
+  transition: all $hover_speed !important;
+  color:#fff !important;
+  cursor:pointer !important;
+}
+
+.home #ajax-load-more .alm-btn-wrap {
+  display:none !important;
+}

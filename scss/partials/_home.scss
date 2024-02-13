@@ -1,0 +1,70 @@
+.trends.threecols {
+  display:flex; 
+  padding:0 0px;
+  max-width:1130px;
+  width:calc(100% - 40px);
+  margin: 20px auto;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  padding:0 0px;
+  .col {
+    flex-basis:31%; 
+    min-width:31%;
+    //max-width:340px;
+    margin:0 0 40px 0;
+    img {
+      max-width:100%;
+    }
+    @include respond($tablet) {
+      flex-basis:47%; 
+      min-width:47%; 
+    }
+    @include respond($mobile) {
+      flex-basis:100%; 
+      min-width:100%; 
+      max-width:100%;
+    }
+  }
+  .article {
+    text-align:left;
+    p {
+      padding:0 0 20px 0 ;
+    }
+    .title {
+      color:$blue;
+      text-decoration:none;
+      font-weight:bold;
+      font-size:17px;
+      line-height:26px;
+      margin:15px 0;
+      display:block;
+    }
+    .teaser {
+      color:$h4;
+      text-decoration:none;
+      font-weight:normal;
+      font-size:15px;
+      line-height:26px;
+      margin:15px 0;
+      padding:0;
+    }
+  }
+  .allergy {
+    img {
+      display:block;
+      margin:20px auto;
+    }
+    .title {
+      color:$bluelink;
+      text-decoration:none;
+      font-size:25px;
+      line-height:34px;
+      font-weight:bold;
+    }
+    p {
+      color:#b3b3b3;
+      font-size:25px;
+      line-height:34px;
+    }
+  }
+}

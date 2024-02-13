@@ -1,0 +1,84 @@
+
+
+.alm-filters-container .alm-filter--select {
+  text-align:left;
+  select {
+  
+    color:$black !important;
+    padding:10px;
+    background-color:#e7e8e9 !important;
+    width:auto !important;
+  
+  }
+  select:focus-visible, select:focus {
+    border:none !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+}
+
+
+
+.alm-filters-container {
+  display:flex;
+  
+  .alm-filter--text-wrap.has-button {
+    input[type=text], input[type=text]:focus {
+      background-color:#e7e8e9;
+      border:none;
+      margin:0 0 0 20px;
+    }
+
+    button {
+      margin:0 0 0 10px;
+      border-radius:20px !important;
+      background-color:#597aa1 !important;
+      color:#fff !important;;
+      box-shadow:none !important;
+      font-size:12px;
+      font-family:$font1;
+      font-weight:normal;
+    }
+  }
+}
+
+
+#alm-filters-reset-button {
+  // display:none !important;
+  
+}
+
+.alm-filters--controls {
+  justify-content: center !important;
+  button {
+    margin:0 0 0 10px !important;
+    border-radius:20px !important;
+    background-color:#597aa1 !important;
+    color:#fff !important;;
+    box-shadow:none !important;
+    font-size:12px !important;
+    font-family:$font1 !important; 
+    font-weight:normal !important;
+  }
+  #alm-filters-reset-button {
+    height:40px;
+    line-height:40px;
+    transition:all .3s ease;
+    span {
+      top:0px;
+      left: 4px;
+      padding: 0 5px;
+    }
+  }
+  #alm-filters-reset-button:hover {
+    color: #fff !important;
+    background-color: #565656 !important;
+    transition:all .3s ease !important;
+  }
+}
+
+.alm-filters-container .alm-filter--text-wrap input[type=number], 
+.alm-filters-container .alm-filter--text-wrap input[type=text] {
+  min-width:150px !important;
+}

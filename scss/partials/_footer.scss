@@ -1,0 +1,55 @@
+
+/*! footer styles */
+
+footer {
+  background-color:#e6e6e6;
+	.wrapper {
+    display:flex;
+    justify-content:space-between;
+    padding:50px 20px;
+    max-width:1280px;
+    div {
+      flex-basis:48%;
+      min-width:48%;
+      img {
+        display:block;
+        max-width:280px;
+      }
+      p {
+        display:inline-block;
+        color:#000;
+        font-size:18px;
+        line-height:24px;
+        font-family:$font1;
+      }
+    }
+    div:nth-child(2) {
+      display:flex;
+      justify-content:flex-end;
+      img {
+        max-width:92px;
+      }
+    }
+
+    
+    @include respond($desktop) {
+      flex-wrap:wrap;
+      div {
+        flex-basis:48%;
+        min-width:48%;
+        margin:0 0 20px 0;
+      }
+    }
+    
+    @include respond($mobile) {
+      flex-wrap:wrap;
+      div {
+        flex-basis:100%;
+        min-width:100%;
+      }
+   
+    }
+    
+
+	}
+}

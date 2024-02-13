@@ -1,0 +1,36 @@
+// News Page Stuff //
+
+section.quote {
+  margin:50px 0;
+  .wrapper {
+    
+    max-width:740px;
+    padding:60px 20px 60px 20px;   
+    border-top:1px solid #9fa1a2;
+    border-bottom:1px solid #9fa1a2;
+    
+    h3 {
+      color:#8d3109;
+      font-size:28px;
+      line-height:38px;
+      text-align:center;
+      font-weight:normal;
+      font-style:italic;
+    }
+    
+    h4 {
+      color:#231f20;
+      font-size:21px;
+      line-height:24px;
+      font-weight:bold;
+      text-align:center;
+    }
+   
+  }
+}
+
+.page-program section.quote {
+ .wrapper {
+       border-bottom:0px solid #9fa1a2;
+ } 
+}

@@ -1,0 +1,127 @@
+// News Page Stuff //
+
+section.content-block.schedule,
+section.content-block.alumni-books {
+  .wrapper {
+    padding:20px 20px 60px 20px;
+    h2 {
+      color:$black;
+      text-align:left;
+      margin:20px 0;
+      padding:0;
+      max-width:100%;
+    }
+    .classtable {
+      h3 {
+        text-align:left;
+        max-width:100%;
+      }
+      table {
+        width:100%;
+        margin:0 0 40px 0;
+        tr {
+          th {
+            text-align:left;
+            padding:10px 10px 20px 10px;
+            font-weight:normal;
+            font-style:italic;
+          }
+          td {
+            padding:10px 10px 20px 10px;
+            text-align:left;
+          }
+          td.image {
+            img {
+              max-width:90px !important;
+            }
+          }
+        }
+        tr:nth-child(even) {
+          td {
+            background-color:#f5f5f5;
+          }
+        }
+      }
+    }
+    
+    .other {
+      text-align:left;
+      margin:40px 0 20px 0;
+      h4 {
+        margin:20px 0;
+        padding:0;
+        max-width:100%;
+        color:$black;
+      }
+      ul {
+        list-style:none;
+        margin:10px 0;
+        padding:0;
+      }
+    }
+    
+  }
+  
+  @include respond($tablet) {
+    .wrapper {
+      padding:0px 20px 0px 20px;
+      .classtable {
+        table {
+          tr {
+            td.image {
+                img {
+                  min-width:75px;
+                }
+              }
+          }
+        }
+      }
+    }    
+  } 
+  
+  @include respond($mobile) {
+    .wrapper {
+      .classtable {
+        table {
+          tr {
+            td {
+              width: 100%;
+              min-width: 100%;
+              display:block;  
+            }
+            th {
+              display:none;
+            }
+          }
+        }
+      }
+    }    
+  } 
+  
+  
+
+  
+  
+}
+
+section.content-block.alumni-books {
+  .wrapper {
+    padding:50px 20px 60px 20px;
+  }
+  @include respond($tablet) {
+    .wrapper {
+      padding:50px 20px 0px 20px;
+   
+    }    
+  } 
+}
+
+.page-current-schedule {
+  
+  section:nth-of-type(2) .wrapper {
+    text-align: left;
+    padding: 40px 20px 0px 20px !important;
+  }
+  
+}
+

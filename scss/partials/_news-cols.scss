@@ -1,0 +1,129 @@
+/* page styles */
+
+section.news-cols {
+  .wrapper {
+    max-width:1150px;
+    padding:25px 20px 0px 20px;
+    margin:0 auto;
+    
+    .title {
+      position:relative;
+      width:100%;
+      z-index:10;
+      display:flex;
+      justify-content:center;
+      margin:30px 0;
+      span {
+        display:inline-block;
+        margin:0 auto;
+        padding:0 40px;
+        background-color:#fff;
+        font-weight: normal;
+        font-size:28px;
+      }
+    }
+    .title:after {
+      position:absolute;
+      width:100%;
+      content:'';
+      border:1px solid $light-blue;
+      left:0;
+      top:15px;
+      z-index:-1;
+    }
+    
+    .row {
+      display:flex;
+      flex-wrap:wrap;
+      .col {
+        flex-basis:33.333%;
+        min-width:33.3333%;
+        padding:0 23px;
+        box-sizing:border-box;
+        border-right:1px solid #e7e8e9;
+        img {
+          max-width:100%;
+          height:auto !important;
+        }
+        .date {
+          .type {
+            text-transform:lowercase;
+          }
+        }
+        .title {
+          min-height:45px;
+          a {
+            color:#231f20;
+            font-size:18px;
+            text-decoration:none;
+            font-weight:bold;
+            padding-bottom:15px;
+          }
+        }
+        .title.big {
+          a {
+            font-size:24px;
+            line-height:28px;
+          }
+        }
+        .quote {
+          background-color:#fde7df;
+          padding:20px 35px;
+          color:#231f20;
+          font-size:16px;
+          font-style:italic;
+          position:relative;
+          overflow:visible;
+          opacity:1;
+          min-height:231px;
+          box-sizing:border-box;
+        }
+        .quote:after {
+          background-image:url(/wp-content/uploads/2023/05/quotearrow.png);
+          background-repeat:no-repeat;
+          background-position:0 0;
+          width:29px;
+          height:29px;
+          content:'';
+          position:absolute;
+          left:20%;
+          bottom:-29px;
+          opacity:1;
+        }
+        a.thumb {
+          img {
+            max-height:252px;
+          }
+        }
+      }
+      .col:last-child {
+        //border:none;
+      }
+    }
+    
+  }
+   
+  @include respond($tablet) {
+    .wrapper {
+      .row {
+        .col {
+          flex-basis:100%;
+          min-width:100%;
+          margin:0 0 80px 0;
+          border:none;
+          padding:0;
+          img, .date, .title, .quote {
+            //max-width:400px;
+          }
+        }
+        .col:last-child {
+          margin:0 0 0px 0;
+        }
+      }
+    }
+  }
+  
+  
+}
+
+
