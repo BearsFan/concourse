@@ -41,6 +41,38 @@ if( have_rows('content_blocks') ):
            
         </div> 
        </section>
+       
+      <?php 
+         // Case: Image SLideshow
+         elseif( get_row_layout() == 'image_slideshow' ):
+             $imageslides = get_sub_field('images');
+             if( $imageslides ) {
+               ?>
+               <section class="slider-section image-slideshow">
+                 <div class="wrapper ">     
+                   <div class="slider">
+                     <?php
+                     foreach( $imageslides as $imageslide ) {
+                      $caption = $imageslide['caption']; 
+                      $image = $imageslide['image']; 
+                      ?>
+                     <div class="slide">
+                       <div class="wrap">
+                         <img src="<?php echo $image['url']; ?>" />
+                         <p class="caption"><?php echo $caption; ?></p>
+                       </div>
+                     </div>
+                      <?php
+                 }
+             }
+            
+         ?>
+          </div>
+        
+                    
+           
+         </div> 
+        </section>
              
         <?php
             

@@ -95,3 +95,28 @@ section.slider-section {
 
 }
 
+
+section.slider-section.image-slideshow {
+  .wrapper {
+    .slider {
+      max-width:1040px;
+      margin:20px auto;
+      text-align:center;
+      .slick-track {
+        justify-content: center;
+        .slide {
+          .wrap {
+            display:flex;
+            align-items:center;
+            flex-direction:column;
+            max-width:710px;
+            margin:0 auto;
+          }
+
+        }
+      }
+    }
+          
+  }
+}
+

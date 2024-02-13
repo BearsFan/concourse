@@ -542,6 +542,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/img\/slideshow.png" : {
+      "ft" : 32768,
+      "iS" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/slideshow.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/index.php" : {
       "cB" : 0,
       "ft" : 8192,

@@ -3723,6 +3723,22 @@ section.slider-section .slick-slide {
   }
 }
 
+section.slider-section.image-slideshow .wrapper .slider {
+  max-width: 1040px;
+  margin: 20px auto;
+  text-align: center;
+}
+section.slider-section.image-slideshow .wrapper .slider .slick-track {
+  justify-content: center;
+}
+section.slider-section.image-slideshow .wrapper .slider .slick-track .slide .wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 710px;
+  margin: 0 auto;
+}
+
 .alm-filters-container .alm-filter--select {
   text-align: left;
 }
