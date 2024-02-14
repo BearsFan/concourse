@@ -347,6 +347,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/img\/hero\/news.png" : {
+      "ft" : 32768,
+      "iS" : 360438,
+      "oA" : 0,
+      "oAP" : "\/img\/hero\/news.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/img\/hero\/nyvside.png" : {
       "ft" : 32768,
       "iS" : 790433,
@@ -503,6 +516,45 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/img\/outabout.png" : {
+      "ft" : 32768,
+      "iS" : 486963,
+      "oA" : 0,
+      "oAP" : "\/img\/outabout.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/img\/outaboutside.png" : {
+      "ft" : 32768,
+      "iS" : 656599,
+      "oA" : 0,
+      "oAP" : "\/img\/outaboutside.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/img\/quotearrow.png" : {
+      "ft" : 32768,
+      "iS" : 241,
+      "oA" : 0,
+      "oAP" : "\/img\/quotearrow.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/img\/slider\/arrow-left.png" : {
       "ft" : 32768,
       "iS" : 5798,
@@ -544,9 +596,22 @@
     },
     "\/img\/slideshow.png" : {
       "ft" : 32768,
-      "iS" : 0,
+      "iS" : 547722,
       "oA" : 0,
       "oAP" : "\/img\/slideshow.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/img\/slideshow2.png" : {
+      "ft" : 32768,
+      "iS" : 770987,
+      "oA" : 0,
+      "oAP" : "\/img\/slideshow2.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,

@@ -35,12 +35,19 @@ section.news-cols {
     .row {
       display:flex;
       flex-wrap:wrap;
+      .alm-listing {
+        display:flex;
+        flex-wrap:wrap;
+      }
       .col {
         flex-basis:33.333%;
         min-width:33.3333%;
         padding:0 23px;
         box-sizing:border-box;
         border-right:1px solid #e7e8e9;
+        p {
+          font-family:$font1;
+        }
         img {
           max-width:100%;
           height:auto !important;
@@ -67,19 +74,20 @@ section.news-cols {
           }
         }
         .quote {
-          background-color:#fde7df;
+          background-color:#eedcbd;
           padding:20px 35px;
           color:#231f20;
           font-size:16px;
           font-style:italic;
+          font-weight:400;
           position:relative;
           overflow:visible;
           opacity:1;
-          min-height:231px;
+          min-height:182px;
           box-sizing:border-box;
         }
         .quote:after {
-          background-image:url(/wp-content/uploads/2023/05/quotearrow.png);
+          background-image:url(/wp-content/themes/concourse/img/quotearrow.png);
           background-repeat:no-repeat;
           background-position:0 0;
           width:29px;

@@ -204,6 +204,22 @@ section#sub-page-hero.Community {
   }
 }
 
+section#sub-page-hero.Community.news {
+  .wrapper {
+    background-color:#b97b4e;
+    .inner {
+      .text {
+        h2 {
+          color:#fff;
+        }
+        h1 {
+          color:$yellow;
+        }
+      }
+    }
+  }
+}
+
 section.search-bar {
   background-color:#ee7e59;
   .wrapper {
