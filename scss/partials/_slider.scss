@@ -55,6 +55,11 @@ section.slider-section {
     background-position:0 0 !important;
     background-size:34px;
     z-index:9999;
+    @include respond(1023px) {
+      top:105%;
+      transform: translate(0, 0%) !important;
+      -webkit-transform: translate(0, 0%) !important;
+    }
     button {
       border-radius:0;
     }
@@ -80,18 +85,18 @@ section.slider-section {
   {
       height: inherit !important;
   }
-
   
-  @include respond($mobile) {
-    
+  @include respond(1023px) {
     .slick-next {
-      right:5% ;
+      right:35% ;
     }
     .slick-prev {
-      left:5% ;
+      left:35% ;
     }
-
   }
+
+  
+
 
 }
 

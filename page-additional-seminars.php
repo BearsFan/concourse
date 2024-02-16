@@ -52,59 +52,49 @@ $hero = get_field('hero');
         
          while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
         
-          <div class="classtable">
-            
-             <h3>Other Humanities Courses</h3>
-          
-         <?php
-            
-         if( have_rows('courses') ): ?>
-           
-           <table cellpadding="0" cellspacing="0" border="0">
-             
-             <tr>
-               <th>Subject</th>
-               <th>Units</th>
-               <th>Title</th>
-               <th>Instructor</th>
-               <th>Day/Time</th>
-               <th>Room</th>
-             </tr>
-           
-           <?php
-             while( have_rows('courses') ) : the_row();
-                 $class = get_sub_field('class'); 
-                 $daytime = get_sub_field('daytime'); 
-                 $instructor = get_sub_field('instructor'); 
-                 $room = get_sub_field('room'); 
-                 $units = get_field('units', $class->ID);
-                 $subject = get_field('number', $class->ID);
-                 $name = get_field('name', $class->ID);
-                 $url = get_field('url', $class->ID);
-                 $title = get_the_title($class->ID);
-                 ?>
-                 <tr>
-                   <td class="subject"><?php echo $subject; ?></td>
-                   <td class="units"><span style="white-space:nowrap;"><?php echo $units; ?></span></td>
-                   <td class="name"><a href="<?php echo $url; ?>" target="_blank"><?php echo $name; ?></a></td>
-                   <td class="instructor"><?php echo $instructor; ?></td>
-                    <td class="daytime"><?php echo $daytime; ?></td>
-                   <td class="room"><?php echo $room; ?></td>
-                </tr>
-            <?php     
-             endwhile; ?>
-             
-            </table>
-            
-            <?php 
-         else :
-         endif;
-         ?>
+            <div class="schedule-block ">
+              <h3>Other Humanities Courses</h3>         
+              <div class="classes">      
+            <?php
+            $cmpfall = new WP_Query( array(
+              'showposts' => '1000', 
+              'post_type' => 'class',  
+              'meta_query'    => array(
+                      'relation'      => 'AND',
+                      array(
+                          'key'       => 'subjecttype',
+                          'value'     => 'add',
+                      )
+                  ),
+              )
+            );
          
-       </div>
+            while ( $cmpfall->have_posts() ) : $cmpfall->the_post(); ?>
+           
+               <?php
+                     $units = get_field('units', $class->ID, $post->ID);
+                     $number = get_field('number', $class->ID, $post->ID);
+                     $name = get_field('name', $class->ID, $post->ID);
+                     $url = get_field('url', $class->ID, $post->ID);                
+                     $subject = get_field('subjecttype', $class->ID, $post->ID);
+                     $teaser = get_field('teaser', $class->ID, $post->ID);
+                     $instructor = get_field('instructor', $class->ID, $post->ID);
+                     $type = get_field('type', $class->ID, $post->ID);
+                     $image = get_field('image', $class->ID, $post->ID);
+                     $link = get_the_permalink($post->ID);
+                     ?>
+                    <?php
+                    include 'partials/_class.php';    
+                    ?>
+                <?php     
+                 endwhile; ?>
+             </div>
+         </div>
          
          <?php     
-          endwhile; ?>
+         
+         
+         endwhile; ?>
           
         
        

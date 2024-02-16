@@ -371,6 +371,22 @@ if( have_rows('content_blocks') ):
 
         </div> 
        </section> 
+ 
+ <?php         
+ // Callout with Blue BG
+ elseif( get_row_layout() == 'callout_with_blue_background' ): 
+         $content = get_sub_field('content');      
+         ?>      
+        <section class="callout blue-bg white-bot">
+          <div class="wrapper">
+               
+             <div class="content">
+               <?php echo $content; ?>
+             </div>
+          
+          </div>
+          <div class="rip-bot"></div>
+       </section>
 
 
 <?php 

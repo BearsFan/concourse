@@ -171,6 +171,45 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/img\/class1.png" : {
+      "ft" : 32768,
+      "iS" : 371269,
+      "oA" : 0,
+      "oAP" : "\/img\/class1.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/img\/class2.png" : {
+      "ft" : 32768,
+      "iS" : 196730,
+      "oA" : 0,
+      "oAP" : "\/img\/class2.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/img\/class3.png" : {
+      "ft" : 32768,
+      "iS" : 532884,
+      "oA" : 0,
+      "oAP" : "\/img\/class3.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/img\/Clip1.png" : {
       "ft" : 32768,
       "iS" : 385825,
@@ -542,6 +581,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/img\/plus.png" : {
+      "ft" : 32768,
+      "iS" : 784,
+      "oA" : 0,
+      "oAP" : "\/img\/plus.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/img\/quotearrow.png" : {
       "ft" : 32768,
       "iS" : 241,
@@ -833,22 +885,6 @@
       "oAP" : "\/page-additional-seminars.php",
       "oF" : 0
     },
-    "\/page-alumni-books.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/page-alumni-books.php",
-      "oF" : 0
-    },
-    "\/page-alumni.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/page-alumni.php",
-      "oF" : 0
-    },
     "\/page-core-concourse-classes.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -873,22 +909,6 @@
       "oAP" : "\/page-news.php",
       "oF" : 0
     },
-    "\/page-projects.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/page-projects.php",
-      "oF" : 0
-    },
-    "\/page-protected.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/page-protected.php",
-      "oF" : 0
-    },
     "\/page-search.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -897,28 +917,20 @@
       "oAP" : "\/page-search.php",
       "oF" : 0
     },
-    "\/page-students.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/page-students.php",
-      "oF" : 0
-    },
-    "\/page-videos.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/page-videos.php",
-      "oF" : 0
-    },
     "\/page.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/page.php",
+      "oF" : 0
+    },
+    "\/partials\/_class.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/partials\/_class.php",
       "oF" : 0
     },
     "\/partials\/_custom_content.php" : {
@@ -1347,28 +1359,12 @@
       "oAP" : "\/search.php",
       "oF" : 0
     },
-    "\/single-project.php" : {
+    "\/single-class.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/single-project.php",
-      "oF" : 0
-    },
-    "\/single-schedules.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/single-schedules.php",
-      "oF" : 0
-    },
-    "\/single-students.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/single-students.php",
+      "oAP" : "\/single-class.php",
       "oF" : 0
     },
     "\/single.php" : {

@@ -15,6 +15,9 @@ var ME = {};
     $('nav li.parent a:first-child:not(.sub-menu a)').on('click', handlers.clickNavLinkParent);  
     $('nav li span').on('click', handlers.clickParentPlus);  
     $('.accordions .accordion span').on('click', handlers.clickAccordion);  
+    $('.schedule .buttons a').on('click', handlers.clickCourseSchedule);  
+    $('.readmore img').on('click', handlers.clickReadMore);  
+    
 	}
   
 	ME.removeToggles = function() {         
@@ -49,6 +52,21 @@ var ME = {};
 		clickAccordion: function(e) {  
       e.preventDefault();  
       $(this).parent().toggleClass('open'); 
+		},
+    
+		clickCourseSchedule: function(e) {  
+      e.preventDefault();  
+      $('.buttons a').removeClass('active');
+      $(this).addClass('active');
+      season =  $(this).data('season'); 
+      $('.schedule-block').addClass('hide');
+      $('.schedule-block.' + season).removeClass('hide');    
+		},
+    
+		clickReadMore: function(e) {  
+      e.preventDefault();  
+      $(this).parent().siblings('.cutoff').removeClass('cutoff'); 
+      $(this).hide();
 		},
     
 

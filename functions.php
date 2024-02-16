@@ -31,10 +31,8 @@
    * Add automatic image sizes
    */
   if ( function_exists( 'add_image_size' ) ) { 
-  	add_image_size( 'person', 160, 160, true ); //(cropped)
-    add_image_size( 'trend', 530, 298, true ); //(cropped)
-    add_image_size( 'panels', 1268, 426, true ); //(cropped)
-    add_image_size( 'project', 533, 271, true ); //(cropped)
+  	add_image_size( 'person', 418, 255, true ); //(cropped)
+    add_image_size( 'class', 375, 265, true ); //(cropped)
   }
   
   if( function_exists('acf_add_options_page') ) {

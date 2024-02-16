@@ -49,8 +49,7 @@ $hero = get_field('hero');
              container_type="div" 
              repeater="template_3" 
              post_type="faculty" 
-             posts_per_page="6"
-
+             posts_per_page="9"
              scroll="false"
              order="ASC" 
              orderby="menu_order"

@@ -5,9 +5,12 @@ form {
     padding:10px;
     background-color:#fff;
     color:#000;
-    font-weight:bold;
-    font-size:16px;
-    border:none;
+    font-weight:normal;
+    font-family:$font2;
+    font-size:14px;
+    border:1px solid #eee;
+    margin:0 0 10px 0;
+    display:block;
   }
   input:focus-visible {
     outline:none;
@@ -19,7 +22,7 @@ form {
   }
 }
 
-.content-block {
+
   form {
     input {
       max-width:100%;
@@ -28,21 +31,20 @@ form {
       width:100%;
     }
     
-    
     input[type="submit"] {
       display:inline-block; 
-      background-color:#999; 
+      background-color:#597aa1; 
       color: #FFFFFF;	
-      font-family: $primary_font;
+      font-family: $font1;
       font-size: 20px;	
       font-weight:bold;
       text-align: center;
-      padding: 10px 50px;
+      padding: 10px 25px;
       border-radius:25px; 
       border:1px solid #fff;
       text-decoration:none;
       transition: all $hover_speed;
-      margin:20px auto;
+      margin:0 auto 20px auto;
 
     }
 
@@ -52,9 +54,10 @@ form {
         color:#fff;
         transition: all $hover_speed;
     }
+  
     
   }
-}
+
 
 .post-password-form {
   
