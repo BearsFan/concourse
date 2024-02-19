@@ -119,6 +119,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/img\/arrow-right-3x2.png" : {
+      "ft" : 32768,
+      "iS" : 830,
+      "oA" : 0,
+      "oAP" : "\/img\/arrow-right-3x2.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/img\/cd-sb1.png" : {
       "ft" : 32768,
       "iS" : 564250,
